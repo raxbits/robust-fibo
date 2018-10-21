@@ -1,5 +1,7 @@
 '''Demo Program - Use Dynamic programming for O(n) solution in Fibo Calculation'''
-
+'''
+    n -> number to calculate fibonacci for
+'''
 def fibo(n):
     arr=[0]*(n+1)
     if n == 1 or n == 0:
@@ -10,6 +12,7 @@ def fibo(n):
         arr[i]=arr[i-1]+arr[i-2]
     return arr[n]
 
+'''Driver Program'''
 
 if __name__=='__main__':
     while(True):
